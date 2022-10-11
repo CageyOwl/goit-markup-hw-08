@@ -1,0 +1,23 @@
+.backdrop {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+  
+    background-color: $backdrop-bg;
+  
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+  
+    transition: transform $main-transition-delay $main-transition-timing-function,
+                opacity $main-transition-delay $main-transition-timing-function,
+                visibility $main-transition-delay $main-transition-timing-function;
+
+    &--is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(0);
+    }
+}

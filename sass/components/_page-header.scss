@@ -1,0 +1,76 @@
+.page-header {
+    border-bottom: 1px solid #ececec;
+}
+
+.page-header__logo {
+    @extend %logo;
+
+    padding-bottom: 24px;
+    padding-top: 24px;
+    text-decoration: none;
+  
+    color: $nav-logo-font-color;
+}
+
+.page-header__nav-pages {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+    margin-left: 93px;
+    gap: 50px;
+}
+
+.page-header__page-link {
+    line-height: inherit;
+    padding: 32px 0;
+    color: $custom-black;
+}
+
+.page-header__page-link--accentuated {
+    color: $accentuation-color;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        bottom: -1px;
+        left: -3px;
+        content: '';
+        width: calc(100% + 6px);
+        height: 4px;
+        border-radius: 2px;
+    
+        background-color: $accentuation-color;
+    }
+}
+
+.page-header__nav-contacts {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+  
+    margin-left: auto;
+    gap: 50px;
+    align-items: center;
+}
+
+.page-header__contact-link {
+    display: flex;
+    align-items: center;
+  
+    line-height: inherit;
+    padding: 32px 0;
+    color: $main-font-color;
+    fill: $main-font-color;
+}
+
+.envelope-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+  
+.smartphone-icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}

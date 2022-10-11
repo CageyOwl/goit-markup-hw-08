@@ -1,0 +1,33 @@
+.socials {
+    gap: 10px;
+}
+  
+.socials__link {
+    display: block;
+    padding: 12px;
+    border-radius: 50%;
+    fill: $svg-color;
+  
+    transition: background-color $main-transition-delay $main-transition-timing-function,
+                fill $main-transition-delay $main-transition-timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: $accentuation-color;
+        fill: $main-bg-color;
+    }
+
+    &--dark {
+        background-color: $footer-socials-bg-color;
+        fill: $main-bg-color;
+    }
+}
+  
+.instagram-icon,
+.twitter-icon,
+.facebook-icon,
+.linkedin-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+}

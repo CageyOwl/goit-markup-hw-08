@@ -1,0 +1,35 @@
+.customers__list {
+    gap: 30px;
+}
+
+.customers__item {
+    flex: 0 0 170px;
+}
+
+.customers__link {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+  
+    border: 1px solid $svg-color;
+    border-radius: 4px;
+  
+    fill: $svg-color;
+  
+    transition: border-color $main-transition-delay $main-transition-timing-function,
+                fill $main-transition-delay $main-transition-timing-function;
+
+    &:hover,
+    &:focus {
+        border-color: $accentuation-color;
+        fill: $accentuation-color;
+    }
+}
+
+.customers__icon {
+    display: block;
+    width: 106px;
+    height: 60px;
+  
+    margin: auto;
+}
