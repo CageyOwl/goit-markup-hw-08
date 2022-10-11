@@ -11,16 +11,16 @@
   
     text-align: center;
     color: $main-bg-color;
-  }
 
-.hero__title {
-    font-size: 44px;
-    font-weight: 900;
-    text-transform: uppercase;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    width: 696px;
-    margin: 0 auto 30px;
+    &__title {
+        font-size: 44px;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        width: 696px;
+        margin: 0 auto 30px;
+    }
 }
 
 .hero__button {
@@ -41,7 +41,7 @@
     transition: background-color $main-transition-delay $main-transition-timing-function;
 
     &:hover,
-    &focus {
+    &:focus {
         background-color: $hero-button-bg-active;
     }
 }
