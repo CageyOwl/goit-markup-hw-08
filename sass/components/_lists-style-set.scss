@@ -1,6 +1,0 @@
-$lists-to-set: ".page-header__nav-pages", ".page-header__nav-contacts", ".advantages", ".services__list", ".team__list", ".socials", ".customers__list", ".page-footer__links-list", ".portfolio__filter", ".projects";
-
-$links-to-set: ".page-header__page-link", ".page-header__contact-link", ".page-footer__contact-link", ".project-card__link";
-
-@include set-lists-style($lists-to-set);
-@include set-links-style($links-to-set);

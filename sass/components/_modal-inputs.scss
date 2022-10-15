@@ -1,12 +1,7 @@
-.user-meta {
-    padding: 40px;
-    margin: 0;
-}
-
 .user-meta__invitation {
     font-size: 20px;
     font-weight: 700;
-    line-height: 1.17;
+    line-height: 1.5;
   
     text-align: center;
     color: $custom-black;
@@ -15,11 +10,11 @@
 .user-meta__text-inputs {
     display: flex;
     flex-direction: column;
+    width: 100%;
     margin: 12px 0 20px 0;
     padding: 0;
     padding-inline-end: 0;
     padding-block-end: 0;
-    width: 100%;
   
     border: none;
 }
@@ -62,7 +57,7 @@
         border-color: $accentuation-color;
     }
 }
-  
+
 .user-meta__field-icon {
     position: absolute;
     top: 50%;
@@ -74,12 +69,12 @@
 
 .user-meta__label {
     font-size: 12px;
-    line-height: 1.14;
+    line-height: 1.17;
     margin-bottom: 4px;
   
     color: $main-font-color;
 }
-  
+
 .user-meta__comment {
     padding: 12px 16px;
     min-height: 120px;
@@ -93,78 +88,5 @@
 
     &:focus {
         border-color: $accentuation-color;
-    }
-}
-
-.user-meta__checkbox {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  
-    position: absolute;
- }
-  
-.user-meta__checkbox-label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1.71;
-    text-align: center;
-  
-    color: $main-font-color;
-  
-    transition: fill $main-transition-delay $main-transition-timing-function;
-}
-  
-.user-meta__checkbox-icons-container {
-    cursor: pointer;
-    display: block;
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
-}
-  
-.user-meta__checkbox-icon-unchecked {
-    opacity: 1;
-  
-    transition: opacity $main-transition-delay $main-transition-timing-function;
-}
-
-.user-meta__checkbox:checked + .user-meta__checkbox-label .user-meta__checkbox-icon-unchecked {
-    opacity: 0;
-}
-  
-.user-meta__checkbox-icon-checked {
-    opacity: 0;
-  
-    transition: opacity $main-transition-delay $main-transition-timing-function;
-}
-  
-.user-meta__checkbox:checked + .user-meta__checkbox-label .user-meta__checkbox-icon-checked {
-    opacity: 1;
-}
-  
-.user-meta__checkbox:focus + .user-meta__checkbox-label {
-    fill: $accentuation-color;
-}
-  
-.user-meta__checkbox-link {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    color: $accentuation-color;
-
-    &:visited {
-        color: $accentuation-color;
-    }
-
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: 5px;
-        width: 100%;
-        height: 1px;
-        background-color: $accentuation-color;
     }
 }

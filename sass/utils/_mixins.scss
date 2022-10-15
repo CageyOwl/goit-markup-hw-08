@@ -1,32 +1,28 @@
-@mixin set-lists-style($lists-classes-arr) {
+@mixin set-common-lists-styles($lists-classes-arr) {
     @each $list-class in $lists-classes-arr {
-
         #{$list-class} {
             list-style: none;
             padding-inline-start: 0;
             margin: 0;
         }
-
     }
 }
 
-@mixin set-links-style($links-classes-arr) {
+@mixin set-common-links-styles($links-classes-arr) {
     @each $link-class in $links-classes-arr {
-
         #{$link-class} {
             display: block;
             font-style: normal;
             text-decoration: none;
-        
+                        
             transition: color $main-transition-delay $main-transition-timing-function,
                         fill $main-transition-delay $main-transition-timing-function;
-
+                
             &:hover,
             &:focus {
                 color: $accentuation-color;
                 fill: $accentuation-color;
             }
         }
-        
     }
 }

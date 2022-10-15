@@ -1,15 +1,10 @@
 .container {
-    width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     padding: 0 15px;
+
+    max-width: 1200px;
 }
-  
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-  
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -17,19 +12,11 @@
     margin: -1px;
     clip: rect(0, 0, 0, 0);
 }
-  
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
 
-    &__title {
-        font-size: 36px;
-        font-weight: 700;
-        text-align: center;
-        line-height: 1.17;
-        margin-bottom: 50px;
-        margin-top: 0;
-    
-        color: $custom-black;
-    }
+//wip
+
+.flex-centered {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }

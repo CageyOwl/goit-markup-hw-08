@@ -25,6 +25,7 @@
 
         <form class="user-meta">
           <legend class="user-meta__invitation">Залиште свої дані, ми Вам передзвонимо</legend>
+
           <fieldset class="user-meta__text-inputs">
             <div class="user-meta__text-item">
               <div class="user-meta__field">
@@ -67,12 +68,16 @@
 
           <div class="user-meta__checkbox-container">
             <input class="user-meta__checkbox" type="checkbox" name="agreement" id="agreement" value="agreed" required>
+            
             <label class="user-meta__checkbox-label" for="agreement">
               <svg class="user-meta__checkbox-icons-container">
                 <use class="user-meta__checkbox-icon-unchecked" href="./img/icons.svg#chb-unchecked"></use>
                 <use class="user-meta__checkbox-icon-checked" href="./img/icons.svg#chb-checked"></use>
               </svg>
-              Погоджуюся з розсилкою та приймаю&nbsp;<a class="user-meta__checkbox-link" href="">Умови договору</a>
+
+              <div class="user-meta__checkbox-label-text">
+                Погоджуюся з розсилкою та приймаю&nbsp;<a class="user-meta__checkbox-link" href="">Умови договору</a>
+              </div>
             </label>
           </div>
 
@@ -83,17 +88,52 @@
       </div>
     </div>
 
+    <div class="nav-mobile js-menu-container">
+      <button class="nav-mobile__close-button js-close-menu" type="button">
+        <svg class="nav-mobile__icon">
+          <use href="./img/icons.svg#mob-nav-icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="nav-mobile__pages">
+        <li><a class="nav-mobile__page-link nav-mobile__page-link--accentuated" href="./index.html">Студія</a></li>
+        <li><a class="nav-mobile__page-link" href="./portfolio.html">Портфоліо</a></li>
+        <li><a class="nav-mobile__page-link" href="">Контакти</a></li>
+      </ul>
+
+      <ul class="nav-mobile__contacts">
+        <li><a class="nav-mobile__contacts-link nav-mobile__contacts-link--accentuated" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li><a class="nav-mobile__contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>
+
+      <ul class="nav-mobile__socials">
+        <li class="nav-mobile__socials-item"><a href="./index.html" class="nav-mobile__socials-link">Instagram</a></li>
+        <li class="nav-mobile__socials-item"><a href="./index.html" class="nav-mobile__socials-link">Twitter</a></li>
+        <li class="nav-mobile__socials-item"><a href="./index.html" class="nav-mobile__socials-link">Facebook</a></li>
+        <li class="nav-mobile__socials-item"><a href="./index.html" class="nav-mobile__socials-link">LinkedIn</a></li>
+      </ul>
+    </div>
+
     <header class="page-header">
-      <div class="container flex">
-        <nav class="page-header__nav flex">
+      <div class="container flex-centered">
+
+        <nav class="page-header__nav flex-centered">
           <a class="page-header__logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
-          <ul class="page-header__nav-pages flex">
+
+          <button class="page-header__open-mobile-nav-button js-open-menu" type="button">
+            <svg class="page-header__open-mobile-nav-icon">
+              <use href="./img/icons.svg#mob-nav-icon-open"></use>
+            </svg>
+          </button>
+
+          <ul class="page-header__nav-pages flex-centered">
             <li><a class="page-header__page-link page-header__page-link--accentuated" href="./index.html">Студія</a></li>
             <li><a class="page-header__page-link" href="./portfolio.html">Портфоліо</a></li>
             <li><a class="page-header__page-link" href="">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="page-header__nav-contacts flex">
+
+        <ul class="page-header__nav-contacts flex-centered">
           <li>
             <a class="page-header__contact-link" href="mailto:info@devstudio.com">
               <svg class="envelope-icon">
@@ -111,9 +151,10 @@
             </a>
           </li>
         </ul>
+
       </div>
     </header>
-
+<!-- 
     <main>
       <section class="hero">
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
@@ -158,7 +199,7 @@
 
       <section class="services section container">
         <h2 class="section__title">Чим ми займаємося</h2>
-        <ul class="services__list flex">
+        <ul class="services__list flex-centered">
           <li class="services__item">
             <img
               class="services__img"
@@ -195,13 +236,13 @@
       <section class="team section">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
-          <ul class="team__list flex">
+          <ul class="team__list flex-centered">
             <li class="team-member-card">
               <img class="team-member-card__photo" src="./img/team/member1.jpg" alt="Igor Demyanenko" width="270" />
               <div class="team-member-card__meta">
                 <h3 class="team-member-card__name">Ігор Дем'яненко</h3>
                 <p class="team-member-card__position">Product Designer</p>
-                <ul class="socials refined-list flex">
+                <ul class="socials refined-list flex-centered">
                   <li class="socials__item">
                     <a class="socials__link" href="">
                       <svg class="instagram-icon">
@@ -238,7 +279,7 @@
               <div class="team-member-card__meta">
                 <h3 class="team-member-card__name">Ольга Рєпіна</h3>
                 <p class="team-member-card__position">Frontend Developer</p>
-                <ul class="socials refined-list flex">
+                <ul class="socials refined-list flex-centered">
                   <li class="socials__item">
                     <a class="socials__link" href="">
                       <svg class="instagram-icon">
@@ -275,7 +316,7 @@
               <div class="team-member-card__meta">
                 <h3 class="team-member-card__name">Микола Тарасов</h3>
                 <p class="team-member-card__position">Marketing</p>
-                <ul class="socials refined-list flex">
+                <ul class="socials refined-list flex-centered">
                   <li class="socials__item">
                     <a class="socials__link" href="">
                       <svg class="instagram-icon">
@@ -312,7 +353,7 @@
               <div class="team-member-card__meta">
                 <h3 class="team-member-card__name">Михайло Єрмаков</h3>
                 <p class="team-member-card__position">UI Designer</p>
-                <ul class="socials refined-list flex">
+                <ul class="socials refined-list flex-centered">
                   <li class="socials__item">
                     <a class="socials__link" href="">
                       <svg class="instagram-icon">
@@ -351,7 +392,7 @@
       <section class="customers section">
         <div class="container page-footer__container">
           <h2 class="section__title">Постійні клієнти</h2>
-          <ul class="customers__list flex">
+          <ul class="customers__list flex-centered">
             <li class="customers__item">
               <a class="customers__link" href="./index.html">
                 <svg class="customers__icon">
@@ -400,7 +441,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container flex">
+      <div class="container flex-centered">
         <div class="page-footer__links-container">
           <a class="page-footer__logo" href="./index.html"
             ><span class="logo__web">Web</span>Studio</a
@@ -430,7 +471,7 @@
 
         <div class="page-footer__socials-container">
           <p class="page-footer__label">Приєднуйтесь</p>
-          <ul class="socials flex">
+          <ul class="socials flex-centered">
             <li class="socials__item">
               <a class="socials__link socials__link--dark" href="">
                 <svg class="instagram-icon">
@@ -478,8 +519,9 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-nav.js"></script>
   </body>
 </html>

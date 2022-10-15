@@ -1,0 +1,6 @@
+$lists: ".page-header__nav-pages", ".nav-mobile__pages", ".nav-mobile__contacts", ".nav-mobile__socials";
+
+$links: ".page-header__page-link", ".nav-mobile__page-link", ".nav-mobile__contacts-link", ".nav-mobile__socials-link";
+
+@include set-common-lists-styles($lists);
+@include set-common-links-styles($links);

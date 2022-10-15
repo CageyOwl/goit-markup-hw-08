@@ -5,16 +5,60 @@
 .page-header__logo {
     @extend %logo;
 
-    padding-bottom: 24px;
-    padding-top: 24px;
-    text-decoration: none;
-  
+    padding-bottom: 15px;
+    padding-top: 16px;
+
+    font-size: 24px;
+    line-height: 1.17;
+
     color: $nav-logo-font-color;
+
+    @media screen and (min-width: $tablet-w) {
+        padding-bottom: 25px;
+        padding-top: 26px;
+    }
+    @media screen and (min-width: $desktop-w) {
+        padding-bottom: 24px;
+        padding-top: 24px;
+
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}
+
+.page-header__nav {
+    width: 100%;
+}
+
+.page-header__open-mobile-nav-button {
+    margin-left: auto;
+    padding: 0;
+
+    border: none;
+    background-color: $main-bg-color;
+
+    &:hover,
+    &:focus {
+        fill: $accentuation-color;
+    }
+
+    @media screen and (min-width: $tablet-w) {
+        display: none;
+    }
+}
+
+.page-header__open-mobile-nav-icon {
+    width: 40px;
+    height: 40px;
 }
 
 .page-header__nav-pages {
     margin-left: 93px;
     gap: 50px;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 .page-header__page-link {
@@ -24,48 +68,12 @@
     color: $custom-black;
 }
 
-.page-header__page-link--accentuated {
-    color: $accentuation-color;
-    position: relative;
-
-    &::after {
-        position: absolute;
-        bottom: -1px;
-        left: -3px;
-        content: '';
-        width: calc(100% + 6px);
-        height: 4px;
-        border-radius: 2px;
-    
-        background-color: $accentuation-color;
-    }
-}
-
 .page-header__nav-contacts {  
     margin-left: auto;
     align-items: center;
     gap: 50px;
-}
 
-.page-header__contact-link {
-    @extend %header-link-common-styles;
-
-    display: flex;
-    align-items: center;
-
-    padding: 32px 0;
-    color: $main-font-color;
-    fill: $main-font-color;
-}
-
-.envelope-icon {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-}
-  
-.smartphone-icon {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
