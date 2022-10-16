@@ -1,0 +1,97 @@
+.hero {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 118px 15px;
+
+    text-align: center;
+    color: $main-bg-color;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: $hero-gradient,
+                      url("../img/hero-mobile.jpg");
+    @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: $hero-gradient,
+                      url("../img/hero-mobile2x.jpg");
+    }
+
+    @media screen and (min-width: calc($mobile-w + 1px)) {
+        background-image: $hero-gradient,
+                      url("../img/hero-tablet.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: $hero-gradient,
+                            url("../img/hero-tablet2x.jpg");
+        }
+    }
+
+    @media screen and (min-width: calc($tablet-w + 1px)) {
+        background-image: $hero-gradient,
+                      url("../img/hero-desktop.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: $hero-gradient,
+                            url("../img/hero-desktop2x.jpg");
+        }
+    }
+
+    @media screen and (min-width: $desktop-w) {
+        padding: 200px 15px;
+    }
+}
+
+.hero__title {
+    margin: 0 auto 30px;
+    width: 360px;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    
+    text-transform: uppercase;
+
+    @media screen and (min-width: $desktop-w) {
+        font-size: 44px;
+        line-height: 1.36;
+        width: 696px;
+    }
+}
+
+.hero__button {
+    padding: 10px 24px;
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+
+    color: $main-bg-color;
+    background-color: $accentuation-color;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  
+  
+    transition: background-color $main-transition-delay $main-transition-timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: $hero-button-bg-active;
+    }
+
+    @media screen and (min-width: $desktop-w) {
+        padding: 10px 32px;
+    }
+}
