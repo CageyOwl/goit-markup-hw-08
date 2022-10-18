@@ -1,6 +1,6 @@
-$lists: ".page-header__nav-pages", ".nav-mobile__pages", ".nav-mobile__contacts", ".nav-mobile__socials", ".page-header__nav-contacts";
+$lists: ".page-header__nav-pages", ".nav-mobile__pages", ".nav-mobile__contacts", ".nav-mobile__socials", ".page-header__nav-contacts", ".advantages__list", ".services__list", ".team__list", ".socials";
 
-$links: ".page-header__page-link", ".nav-mobile__page-link", ".nav-mobile__contacts-link", ".nav-mobile__socials-link", ".page-header__contact-link";
+$links: ".page-header__page-link", ".nav-mobile__page-link", ".nav-mobile__contacts-link", ".nav-mobile__socials-link", ".page-header__contact-link", ".advantages__item", ".services__item", ".team-member-card", ".socials__link";
 
 @include set-common-lists-styles($lists);
 @include set-common-links-styles($links);

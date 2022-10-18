@@ -87,13 +87,14 @@
     }
 }
 
-.page-header__nav-contacts {  
-    margin-left: auto;
+.page-header__nav-contacts {
     display: none;
+    margin-left: auto;
 
     @media screen and (min-width: $tablet-w) {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         row-gap: 10px;
     }
     @media screen and (min-width: $desktop-w) {

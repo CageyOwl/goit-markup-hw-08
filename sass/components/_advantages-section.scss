@@ -1,0 +1,51 @@
+.advantages__list {
+    gap: 30px;
+}
+
+.advantages__item {
+    max-width: 450px;
+
+    @media screen and (min-width: $tablet-w) {
+        max-width: 354px;
+    }
+    @media screen and (min-width: $desktop-w) {
+        max-width: 270px;
+    }
+}
+
+.advantages__item-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    font-size: inherit;
+    line-height: 1.17;
+    font-weight: 700;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: $custom-black;
+}
+
+.advantages__item-description {
+    line-height: 1.71;
+    margin: 0;
+}
+
+.advantages__icon-container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    border-radius: 4px;
+  
+    background-color: $custom-bg-light-color;
+}
+
+.antenna-icon,
+.clock-icon,
+.diagram-icon,
+.astronaut-icon {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+}

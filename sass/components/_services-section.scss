@@ -1,0 +1,38 @@
+.services {
+    display: none;
+    padding-top: 0;
+
+    @media screen and (min-width: $desktop-w) {
+        display: block;
+    }
+}
+
+.services__list {
+    gap: 30px;
+}
+
+.services__item {
+    position: relative;
+}
+
+.services__img {
+    display: block;
+}
+
+.services__caption {
+    width: 100%;
+    padding: 27px 15px;
+    margin: 0;
+  
+    font-weight: 700;
+    line-height: 1.14;
+  
+    text-align: center;
+    text-transform: uppercase;
+  
+    position: absolute;
+    bottom: 0;
+  
+    color: $main-bg-color;
+    background-color: $services-overlay;
+}

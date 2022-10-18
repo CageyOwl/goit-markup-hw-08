@@ -115,9 +115,9 @@
     </div>
 
     <header class="page-header">
-      <div class="container flex-centered">
+      <div class="container flex flex--baseline">
 
-        <nav class="page-header__nav flex-centered">
+        <nav class="page-header__nav flex">
           <a class="page-header__logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
 
           <button class="page-header__open-mobile-nav-button js-open-menu" type="button">
@@ -126,7 +126,7 @@
             </svg>
           </button>
 
-          <ul class="page-header__nav-pages flex-centered">
+          <ul class="page-header__nav-pages flex">
             <li><a class="page-header__page-link page-header__page-link--accentuated" href="./index.html">Студія</a></li>
             <li><a class="page-header__page-link" href="./portfolio.html">Портфоліо</a></li>
             <li><a class="page-header__page-link" href="">Контакти</a></li>
@@ -161,10 +161,10 @@
         <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
       </section>
 
-      <!-- <section class="advantages section">
+      <section class="advantages section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
-          <ul class="advantages">
+          <ul class="advantages__list flex">
             <li class="advantages__item">
               <div class="advantages__icon-container">
                 <svg class="antenna-icon"><use href="./img/icons.svg#antenna"></use></svg>
@@ -199,7 +199,7 @@
 
       <section class="services section container">
         <h2 class="section__title">Чим ми займаємося</h2>
-        <ul class="services__list flex-centered">
+        <ul class="services__list flex">
           <li class="services__item">
             <img
               class="services__img"
@@ -236,13 +236,23 @@
       <section class="team section">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
-          <ul class="team__list flex-centered">
+          <ul class="team__list">
             <li class="team-member-card">
-              <img class="team-member-card__photo" src="./img/team/member1.jpg" alt="Igor Demyanenko" width="270" />
+              <img class="team-member-card__photo"
+                srcset="./img/team/demianenko-mobile.jpg 450w,
+                ./img/team/demianenko-mobile@2x.jpg 900w,
+                ./img/team/demianenko-tablet.jpg 354w,
+                ./img/team/demianenko-tablet@2x.jpg 708w,
+                ./img/team/demianenko-desktop.jpg 270w,
+                ./img/team/demianenko-desktop@2x.jpg 540w"
+                sizes="(min-width: 1200px) 270px, (min-width: 481px) 354px, 450px"
+                src="./img/team/demianenko-mobile.jpg"
+                alt="Igor Demyanenko"
+              />
               <div class="team-member-card__meta">
                 <h3 class="team-member-card__name">Ігор Дем'яненко</h3>
                 <p class="team-member-card__position">Product Designer</p>
-                <ul class="socials refined-list flex-centered">
+                <ul class="socials flex">
                   <li class="socials__item">
                     <a class="socials__link" href="">
                       <svg class="instagram-icon">
@@ -275,11 +285,21 @@
               </div>
             </li>
             <li class="team-member-card">
-              <img class="team-member-card__photo" src="./img/team/member2.jpg" alt="Olga Ryepina" width="270" />
+              <img class="team-member-card__photo"
+                srcset="./img/team/repina-mobile.jpg 450w,
+                  ./img/team/repina-mobile@2x.jpg 900w,
+                  ./img/team/repina-tablet.jpg 354w,
+                  ./img/team/repina-tablet@2x.jpg 708w,
+                  ./img/team/repina-desktop.jpg 270w,
+                  ./img/team/repina-desktop@2x.jpg 540w"
+                sizes="(min-width: 1200px) 270px, (min-width: 481px) 354px, 450px"
+                src="./img/team/repina-mobile.jpg"
+                alt="Olga Ryepina"
+              />
               <div class="team-member-card__meta">
                 <h3 class="team-member-card__name">Ольга Рєпіна</h3>
                 <p class="team-member-card__position">Frontend Developer</p>
-                <ul class="socials refined-list flex-centered">
+                <ul class="socials flex">
                   <li class="socials__item">
                     <a class="socials__link" href="">
                       <svg class="instagram-icon">
@@ -312,11 +332,21 @@
               </div>
             </li>
             <li class="team-member-card">
-              <img class="team-member-card__photo" src="./img/team/member3.jpg" alt="Mykola Tarasov" width="270" />
+              <img class="team-member-card__photo"
+                srcset="./img/team/tarasov-mobile.jpg 450w,
+                ./img/team/tarasov-mobile@2x.jpg 900w,
+                ./img/team/tarasov-tablet.jpg 354w,
+                ./img/team/tarasov-tablet@2x.jpg 708w,
+                ./img/team/tarasov-desktop.jpg 270w,
+                ./img/team/tarasov-desktop@2x.jpg 540w"
+                sizes="(min-width: 1200px) 270px, (min-width: 481px) 354px, 450px"
+                src="./img/team/tarasov-mobile.jpg"
+                alt="Mykola Tarasov"
+              />
               <div class="team-member-card__meta">
                 <h3 class="team-member-card__name">Микола Тарасов</h3>
                 <p class="team-member-card__position">Marketing</p>
-                <ul class="socials refined-list flex-centered">
+                <ul class="socials flex">
                   <li class="socials__item">
                     <a class="socials__link" href="">
                       <svg class="instagram-icon">
@@ -349,11 +379,21 @@
               </div>
             </li>
             <li class="team-member-card">
-              <img class="team-member-card__photo" src="./img/team/member4.jpg" alt="Mykhailo Yermakov" width="270" />
+              <img class="team-member-card__photo"
+              srcset="./img/team/yermakov-mobile.jpg 450w,
+                ./img/team/yermakov-mobile@2x.jpg 900w,
+                ./img/team/yermakov-tablet.jpg 354w,
+                ./img/team/yermakov-tablet@2x.jpg 708w,
+                ./img/team/yermakov-desktop.jpg 270w,
+                ./img/team/yermakov-desktop@2x.jpg 540w"
+                sizes="(min-width: 1200px) 270px, (min-width: 481px) 354px, 450px"
+                src="./img/team/yermakov-mobile.jpg"
+              alt="Mykhailo Yermakov"
+              />
               <div class="team-member-card__meta">
                 <h3 class="team-member-card__name">Михайло Єрмаков</h3>
                 <p class="team-member-card__position">UI Designer</p>
-                <ul class="socials refined-list flex-centered">
+                <ul class="socials flex">
                   <li class="socials__item">
                     <a class="socials__link" href="">
                       <svg class="instagram-icon">
@@ -389,10 +429,10 @@
         </div>
       </section>
 
-      <section class="customers section">
+      <!-- <section class="customers section">
         <div class="container page-footer__container">
           <h2 class="section__title">Постійні клієнти</h2>
-          <ul class="customers__list flex-centered">
+          <ul class="customers__list flex">
             <li class="customers__item">
               <a class="customers__link" href="./index.html">
                 <svg class="customers__icon">
@@ -441,7 +481,7 @@
     </main>
 
     <!-- <footer class="page-footer">
-      <div class="container flex-centered">
+      <div class="container flex">
         <div class="page-footer__links-container">
           <a class="page-footer__logo" href="./index.html"
             ><span class="logo__web">Web</span>Studio</a
@@ -471,7 +511,7 @@
 
         <div class="page-footer__socials-container">
           <p class="page-footer__label">Приєднуйтесь</p>
-          <ul class="socials flex-centered">
+          <ul class="socials flex">
             <li class="socials__item">
               <a class="socials__link socials__link--dark" href="">
                 <svg class="instagram-icon">

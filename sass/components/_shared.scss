@@ -13,8 +13,39 @@
     clip: rect(0, 0, 0, 0);
 }
 
-.flex-centered {
+.flex {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
+
+    &--baseline {
+        justify-content: baseline;
+    }
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $desktop-w) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.section__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+
+    color: $custom-black;
+
+    @media screen and (min-width: $desktop-w) {
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
 }
