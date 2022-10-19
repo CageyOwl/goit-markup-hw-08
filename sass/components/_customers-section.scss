@@ -1,0 +1,41 @@
+.customers__list {
+    display: grid;
+    gap: 30px;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    @media screen and (min-width: $tablet-w) {
+        grid-template-columns: repeat(3, 1fr);      
+    }
+    @media screen and (min-width: $desktop-w) {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.customers__link {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+  
+    border: 1px solid $svg-color;
+    border-radius: 4px;
+  
+    fill: $svg-color;
+  
+    transition: border-color $main-transition-delay $main-transition-timing-function,
+                fill $main-transition-delay $main-transition-timing-function;
+
+    &:hover,
+    &:focus {
+        border-color: $accentuation-color;
+        fill: $accentuation-color;
+    }
+}
+
+.customers__icon {
+    display: block;
+    width: 106px;
+    height: 60px;
+  
+    margin: auto;
+}

@@ -1,8 +1,14 @@
 .container {
     margin: 0 auto;
     padding: 0 15px;
+    max-width: 480px;
 
-    max-width: 1200px;
+    @media screen and (min-width: $tablet-w) {
+        max-width: 768px;
+    }
+    @media screen and (min-width: $desktop-w) {
+        max-width: 1200px;
+    }
 }
 
 .visually-hidden {

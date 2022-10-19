@@ -29,6 +29,8 @@
 .advantages__item-description {
     line-height: 1.71;
     margin: 0;
+
+    color: $main-font-color; // because of _lists-common-styles.scss
 }
 
 .advantages__icon-container {
