@@ -1,15 +1,30 @@
 @mixin set-common-lists-styles($lists-classes-arr) {
     @each $list-class in $lists-classes-arr {
+
         #{$list-class} {
             list-style: none;
             padding-inline-start: 0;
             margin: 0;
         }
+
     }
 }
 
 @mixin set-common-links-styles($links-classes-arr) {
     @each $link-class in $links-classes-arr {
+
+        #{$link-class} {
+            display: block;
+            font-style: normal;
+            text-decoration: none;
+        }
+        
+    }
+}
+
+@mixin set-common-links-styles--interactive($links-classes-arr) {
+    @each $link-class in $links-classes-arr {
+
         #{$link-class} {
             display: block;
             font-style: normal;
@@ -24,5 +39,6 @@
                 fill: $accentuation-color;
             }
         }
+
     }
 }

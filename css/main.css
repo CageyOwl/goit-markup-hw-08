@@ -293,6 +293,18 @@ svg {
   margin: 0;
 }
 
+.advantages__item {
+  display: block;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.team-member-card {
+  display: block;
+  font-style: normal;
+  text-decoration: none;
+}
+
 .page-header__page-link {
   display: block;
   font-style: normal;
@@ -353,18 +365,6 @@ svg {
   fill: rgb(33, 150, 243);
 }
 
-.advantages__item {
-  display: block;
-  font-style: normal;
-  text-decoration: none;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.advantages__item:hover, .advantages__item:focus {
-  color: rgb(33, 150, 243);
-  fill: rgb(33, 150, 243);
-}
-
 .services__item {
   display: block;
   font-style: normal;
@@ -373,18 +373,6 @@ svg {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .services__item:hover, .services__item:focus {
-  color: rgb(33, 150, 243);
-  fill: rgb(33, 150, 243);
-}
-
-.team-member-card {
-  display: block;
-  font-style: normal;
-  text-decoration: none;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team-member-card:hover, .team-member-card:focus {
   color: rgb(33, 150, 243);
   fill: rgb(33, 150, 243);
 }
@@ -1066,7 +1054,6 @@ svg {
 .advantages__item-description {
   line-height: 1.71;
   margin: 0;
-  color: rgb(117, 117, 117);
 }
 
 .advantages__icon-container {
@@ -1188,7 +1175,6 @@ svg {
 
 .team-member-card__position {
   margin: 0 0 16px 0;
-  color: rgb(117, 117, 117);
 }
 
 .socials {
