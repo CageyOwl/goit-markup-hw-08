@@ -8,9 +8,6 @@
     padding-bottom: 15px;
     padding-top: 16px;
 
-    font-size: 24px;
-    line-height: 1.17;
-
     color: $nav-logo-font-color;
 
     @media screen and (min-width: $tablet-w) {
@@ -20,9 +17,6 @@
     @media screen and (min-width: $desktop-w) {
         padding-bottom: 24px;
         padding-top: 24px;
-
-        font-size: 26px;
-        line-height: 1.19;
     }
 }
 

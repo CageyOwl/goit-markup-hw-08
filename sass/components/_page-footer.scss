@@ -1,0 +1,38 @@
+.page-footer {
+    padding: 60px 0;
+
+    background-color: $custom-bg-dark-color;
+}
+
+.flex--footer {
+    row-gap: 60px;
+    column-gap: 180px;
+
+    @media screen and (max-width: calc($desktop-w - 1px)) {
+        text-align: center; 
+    }
+    @media screen and (min-width: $desktop-w) {
+        column-gap: 95px;
+    }
+}
+
+.page-footer__logo {
+    @extend %logo;
+
+    display: block;
+    margin-bottom: 20px;
+
+    color: $main-bg-color;
+}
+
+.page-footer__contact-link {
+    display: block;
+    line-height: 1.71;
+    margin-top: 6px;
+
+    color: $footer-font-transparent;
+
+    &--address-color {
+        color: $main-bg-color;
+    }
+}

@@ -15,17 +15,52 @@
   </head>
 
   <body>
+    <div class="nav-mobile js-menu-container">
+      <button class="nav-mobile__close-button js-close-menu" type="button">
+        <svg class="nav-mobile__icon">
+          <use href="./img/icons.svg#mob-nav-icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="nav-mobile__pages">
+        <li><a class="nav-mobile__page-link" href="./index.html">Студія</a></li>
+        <li><a class="nav-mobile__page-link nav-mobile__page-link--accentuated" href="./portfolio.html">Портфоліо</a></li>
+        <li><a class="nav-mobile__page-link" href="">Контакти</a></li>
+      </ul>
+
+      <ul class="nav-mobile__contacts">
+        <li><a class="nav-mobile__contacts-link nav-mobile__contacts-link--accentuated" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li><a class="nav-mobile__contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>
+
+      <ul class="nav-mobile__socials">
+        <li class="nav-mobile__socials-item"><a href="./index.html" class="nav-mobile__socials-link">Instagram</a></li>
+        <li class="nav-mobile__socials-item"><a href="./index.html" class="nav-mobile__socials-link">Twitter</a></li>
+        <li class="nav-mobile__socials-item"><a href="./index.html" class="nav-mobile__socials-link">Facebook</a></li>
+        <li class="nav-mobile__socials-item"><a href="./index.html" class="nav-mobile__socials-link">LinkedIn</a></li>
+      </ul>
+    </div>
+
     <header class="page-header">
-      <div class="container flex">
+      <div class="container flex flex--baseline">
+
         <nav class="page-header__nav flex">
           <a class="page-header__logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
+
+          <button class="page-header__open-mobile-nav-button js-open-menu" type="button">
+            <svg class="page-header__open-mobile-nav-icon">
+              <use href="./img/icons.svg#mob-nav-icon-open"></use>
+            </svg>
+          </button>
+
           <ul class="page-header__nav-pages flex">
             <li><a class="page-header__page-link" href="./index.html">Студія</a></li>
             <li><a class="page-header__page-link page-header__page-link--accentuated" href="./portfolio.html">Портфоліо</a></li>
             <li><a class="page-header__page-link" href="">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="page-header__nav-contacts flex">
+
+        <ul class="page-header__nav-contacts">
           <li>
             <a class="page-header__contact-link" href="mailto:info@devstudio.com">
               <svg class="envelope-icon">
@@ -43,6 +78,7 @@
             </a>
           </li>
         </ul>
+
       </div>
     </header>
 
@@ -207,7 +243,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container flex">
+      <div class="container flex flex--footer">
         <div class="page-footer__links-container">
           <a class="page-footer__logo" href="./index.html"
             ><span class="logo__web">Web</span>Studio</a
@@ -273,7 +309,7 @@
           <legend class="visually-hidden"></legend>
           <label class="page-footer__label" for="mailing">Підпишіться на розсилку</label>
 
-          <div class="page-footer__feedback-inputs-container">
+          <div class="page-footer__feedback-inputs-container flex">
             <input class="page-footer__input" type="email" name="mailing" id="mailing" placeholder="E-mail">
 
             <button class="page-footer__button" type="submit">
@@ -286,5 +322,13 @@
         </form>
       </div>
     </footer>
+
+    <script src="./js/mobile-nav.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

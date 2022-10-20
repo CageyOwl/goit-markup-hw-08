@@ -11,8 +11,8 @@
 
 @import "./components/backdrop";
 @import "./components/modal";
-@import "./components/modal-inputs";
-@import "./components/modal-checkbox";
+@import "./components/modal__inputs";
+@import "./components/modal__checkbox";
 
 @import "./components/mobile-nav";
 @import "./components/page-header";
@@ -22,3 +22,7 @@
 @import "./components/team-section";
 @import "./components/socials";
 @import "./components/customers-section";
+@import "./components/page-footer";
+@import "./components/page-footer__feedback-form";
+
+@import "./components/portfolio";

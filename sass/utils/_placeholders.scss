@@ -1,10 +1,18 @@
 %logo {
     font-family: $logo-font-style;
+    font-size: 24px;
+    line-height: 1.17;
     font-weight: 700;
+    
     text-decoration: none;
 
     .logo__web {
         color: $accentuation-color;
+    }
+
+    @media screen and (min-width: $desktop-w) {
+        font-size: 26px;
+        line-height: 1.19;
     }
 }
 
