@@ -11,7 +11,7 @@
   
     function toggleModal() {
       refs.modal.classList.toggle("backdrop--is-hidden");
-      refs.page.classList.toggle(".rick-roll");
-      refs.page.classList.toggle(".no-scroll");
+      refs.page.classList.toggle("rick-roll");
+      refs.page.classList.toggle("no-scroll");
     }
 })();
