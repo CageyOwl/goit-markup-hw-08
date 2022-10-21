@@ -89,4 +89,8 @@
     &:focus {
         border-color: $accentuation-color;
     }
+
+    @media screen and (max-height: 622px) {
+        min-height: 66px;
+    }
 }

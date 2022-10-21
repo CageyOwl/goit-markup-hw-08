@@ -15,32 +15,6 @@
   </head>
 
   <body>
-    <div class="nav-mobile js-menu-container">
-      <button class="nav-mobile__close-button js-close-menu" type="button">
-        <svg class="nav-mobile__icon">
-          <use href="./img/icons.svg#mob-nav-icon-close"></use>
-        </svg>
-      </button>
-
-      <ul class="nav-mobile__pages">
-        <li><a class="nav-mobile__page-link" href="./index.html">Студія</a></li>
-        <li><a class="nav-mobile__page-link nav-mobile__page-link--accentuated" href="./portfolio.html">Портфоліо</a></li>
-        <li><a class="nav-mobile__page-link" href="">Контакти</a></li>
-      </ul>
-
-      <ul class="nav-mobile__contacts">
-        <li><a class="nav-mobile__contacts-link nav-mobile__contacts-link--accentuated" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        <li><a class="nav-mobile__contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      </ul>
-
-      <ul class="nav-mobile__socials">
-        <li class="nav-mobile__socials-item"><a href="./index.html" class="nav-mobile__socials-link">Instagram</a></li>
-        <li class="nav-mobile__socials-item"><a href="./index.html" class="nav-mobile__socials-link">Twitter</a></li>
-        <li class="nav-mobile__socials-item"><a href="./index.html" class="nav-mobile__socials-link">Facebook</a></li>
-        <li class="nav-mobile__socials-item"><a href="./index.html" class="nav-mobile__socials-link">LinkedIn</a></li>
-      </ul>
-    </div>
-
     <header class="page-header">
       <div class="container flex flex--baseline">
 
@@ -52,6 +26,30 @@
               <use href="./img/icons.svg#mob-nav-icon-open"></use>
             </svg>
           </button>
+
+          <div class="nav-mobile js-menu-container">
+            <button class="nav-mobile__close-button js-close-menu" type="button">
+              <svg class="nav-mobile__icon">
+                <use href="./img/icons.svg#mob-nav-icon-close"></use>
+              </svg>
+            </button>
+      
+            <ul class="nav-mobile__pages">
+              <li><a class="nav-mobile__page-link" href="./index.html">Студія</a></li>
+              <li><a class="nav-mobile__page-link nav-mobile__page-link--accentuated" href="./portfolio.html">Портфоліо</a></li>
+              <li><a class="nav-mobile__page-link" href="">Контакти</a></li>
+            </ul>
+            <ul class="nav-mobile__contacts">
+              <li><a class="nav-mobile__contacts-link nav-mobile__contacts-link--accentuated" href="tel:+380961111111">+38 096 111 11 11</a></li>
+              <li><a class="nav-mobile__contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+            <ul class="nav-mobile__socials">
+              <li class="nav-mobile__socials-item"><a href="./index.html" class="nav-mobile__socials-link">Instagram</a></li>
+              <li class="nav-mobile__socials-item"><a href="./index.html" class="nav-mobile__socials-link">Twitter</a></li>
+              <li class="nav-mobile__socials-item"><a href="./index.html" class="nav-mobile__socials-link">Facebook</a></li>
+              <li class="nav-mobile__socials-item"><a href="./index.html" class="nav-mobile__socials-link">LinkedIn</a></li>
+            </ul>
+          </div>
 
           <ul class="page-header__nav-pages flex">
             <li><a class="page-header__page-link" href="./index.html">Студія</a></li>
@@ -94,11 +92,21 @@
           <li><button class="portfolio__button" type="button">Маркетинг</button></li>
         </ul>
 
-        <ul class="projects flex">
+        <ul class="projects">
           <li class="project-card">
             <a class="project-card__link" href="">
               <div class="project-card__rev">
-                <img class="project-card__img" src="./img/projects/proj_1.jpg" alt="Проект 1" width="370" height="294" />
+                <img class="project-card__img"
+                  srcset="./img/projects/technokriak-mobile.jpg 450w,
+                  ./img/projects/technokriak-mobile@2x.jpg 900w,
+                  ./img/projects/technokriak-tablet.jpg 354w,
+                  ./img/projects/technokriak-tablet@2x.jpg 708w,
+                  ./img/projects/technokriak-desktop.jpg 370w,
+                  ./img/projects/technokriak-desktop@2x.jpg 740w"
+                  sizes="(min-width: 1200px) 370px, (min-width: 481px) 354px, 450px"
+                  src="./img/projects/technokriak-mobile.jpg"
+                  alt="Технокряк"
+                />
                 <p class="project-card__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
@@ -114,7 +122,17 @@
           <li class="project-card">
             <a class="project-card__link" href="">
               <div class="project-card__rev">
-                <img class="project-card__img" src="./img/projects/proj_2.jpg" alt="Проект 2" width="370" height="294" />
+                <img class="project-card__img"
+                  srcset="./img/projects/no-vs-gs-poster-mobile.jpg 450w,
+                  ./img/projects/no-vs-gs-poster-mobile@2x.jpg 900w,
+                  ./img/projects/no-vs-gs-poster-tablet.jpg 354w,
+                  ./img/projects/no-vs-gs-poster-tablet@2x.jpg 708w,
+                  ./img/projects/no-vs-gs-poster-desktop.jpg 370w,
+                  ./img/projects/no-vs-gs-poster-desktop@2x.jpg 740w"
+                  sizes="(min-width: 1200px) 370px, (min-width: 481px) 354px, 450px"
+                  src="./img/projects/no-vs-gs-poster-mobile.jpg"
+                  alt="Постер Новий Орлеан - Голден Стар"
+                />
                 <p class="project-card__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
@@ -130,7 +148,17 @@
           <li class="project-card">
             <a class="project-card__link" href="">
               <div class="project-card__rev">
-                <img class="project-card__img" src="./img/projects/proj_3.jpg" alt="Проект 3" width="370" height="294" />
+                <img class="project-card__img"
+                  srcset="./img/projects/seafood-mobile.jpg 450w,
+                  ./img/projects/seafood-mobile@2x.jpg 900w,
+                  ./img/projects/seafood-tablet.jpg 354w,
+                  ./img/projects/seafood-tablet@2x.jpg 708w,
+                  ./img/projects/seafood-desktop.jpg 370w,
+                  ./img/projects/seafood-desktop@2x.jpg 740w"
+                  sizes="(min-width: 1200px) 370px, (min-width: 481px) 354px, 450px"
+                  src="./img/projects/seafood-mobile.jpg"
+                  alt="Морепродукти"
+                />
                 <p class="project-card__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
@@ -146,7 +174,17 @@
           <li class="project-card">
             <a class="project-card__link" href="">
               <div class="project-card__rev">
-                <img class="project-card__img" src="./img/projects/proj_4.jpg" alt="Проект 4" width="370" height="294" />
+                <img class="project-card__img"
+                  srcset="./img/projects/prime-mobile.jpg 450w,
+                  ./img/projects/prime-mobile@2x.jpg 900w,
+                  ./img/projects/prime-tablet.jpg 354w,
+                  ./img/projects/prime-tablet@2x.jpg 708w,
+                  ./img/projects/prime-desktop.jpg 370w,
+                  ./img/projects/prime-desktop@2x.jpg 740w"
+                  sizes="(min-width: 1200px) 370px, (min-width: 481px) 354px, 450px"
+                  src="./img/projects/prime-mobile.jpg"
+                  alt="Прайм"
+                />
                 <p class="project-card__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
@@ -162,7 +200,17 @@
           <li class="project-card">
             <a class="project-card__link" href="">
               <div class="project-card__rev">
-                <img class="project-card__img" src="./img/projects/proj_5.jpg" alt="Проект 5" width="370" height="294" />
+                <img class="project-card__img"
+                  srcset="./img/projects/boxes-mobile.jpg 450w,
+                  ./img/projects/boxes-mobile@2x.jpg 900w,
+                  ./img/projects/boxes-tablet.jpg 354w,
+                  ./img/projects/boxes-tablet@2x.jpg 708w,
+                  ./img/projects/boxes-desktop.jpg 370w,
+                  ./img/projects/boxes-desktop@2x.jpg 740w"
+                  sizes="(min-width: 1200px) 370px, (min-width: 481px) 354px, 450px"
+                  src="./img/projects/boxes-mobile.jpg"
+                  alt="Бокси"
+                />
                 <p class="project-card__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
@@ -178,7 +226,17 @@
           <li class="project-card">
             <a class="project-card__link" href="">
               <div class="project-card__rev">
-                <img class="project-card__img" src="./img/projects/proj_6.jpg" alt="Проект 6" width="370" height="294" />
+                <img class="project-card__img"
+                  srcset="./img/projects/inspiration-mobile.jpg 450w,
+                  ./img/projects/inspiration-mobile@2x.jpg 900w,
+                  ./img/projects/inspiration-tablet.jpg 354w,
+                  ./img/projects/inspiration-tablet@2x.jpg 708w,
+                  ./img/projects/inspiration-desktop.jpg 370w,
+                  ./img/projects/inspiration-desktop@2x.jpg 740w"
+                  sizes="(min-width: 1200px) 370px, (min-width: 481px) 354px, 450px"
+                  src="../img/projects/inspiration-mobile.jpg"
+                  alt="Натхнення"
+                />
                 <p class="project-card__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
@@ -194,7 +252,17 @@
           <li class="project-card">
             <a class="project-card__link" href="">
               <div class="project-card__rev">
-                <img class="project-card__img" src="./img/projects/proj_7.jpg" alt="Проект 7" width="370" height="294" />
+                <img class="project-card__img"
+                  srcset="./img/projects/limited-ed-mobile.jpg 450w,
+                  ./img/projects/limited-ed-mobile@2x.jpg 900w,
+                  ./img/projects/limited-ed-tablet.jpg 354w,
+                  ./img/projects/limited-ed-tablet@2x.jpg 708w,
+                  ./img/projects/limited-ed-desktop.jpg 370w,
+                  ./img/projects/limited-ed-desktop@2x.jpg 740w"
+                  sizes="(min-width: 1200px) 370px, (min-width: 481px) 354px, 450px"
+                  src="./img/projects/limited-ed-mobile.jpg"
+                  alt="Обмежене видання"
+                />
                 <p class="project-card__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
@@ -210,7 +278,17 @@
           <li class="project-card">
             <a class="project-card__link" href="">
               <div class="project-card__rev">
-                <img class="project-card__img" src="./img/projects/proj_8.jpg" alt="Проект 8" width="370" height="294" />
+                <img class="project-card__img"
+                  srcset="./img/projects/lab-mobile.jpg 450w,
+                  ./img/projects/lab-mobile@2x.jpg 900w,
+                  ./img/projects/lab-tablet.jpg 354w,
+                  ./img/projects/lab-tablet@2x.jpg 708w,
+                  ./img/projects/lab-desktop.jpg 370w,
+                  ./img/projects/lab-desktop@2x.jpg 740w"
+                  sizes="(min-width: 1200px) 370px, (min-width: 481px) 354px, 450px"
+                  src="./img/projects/lab-mobile.jpg"
+                  alt="ЛЕБ"
+                />
                 <p class="project-card__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
@@ -226,7 +304,17 @@
           <li class="project-card">
             <a class="project-card__link" href="">
               <div class="project-card__rev">
-                <img class="project-card__img" src="./img/projects/proj_9.jpg" alt="Проект 9" width="370" height="294" />
+                <img class="project-card__img"
+                  srcset="./img/projects/business-mobile.jpg 450w,
+                  ./img/projects/business-mobile@2x.jpg 900w,
+                  ./img/projects/business-tablet.jpg 354w,
+                  ./img/projects/business-tablet@2x.jpg 708w,
+                  ./img/projects/business-desktop.jpg 370w,
+                  ./img/projects/business-desktop@2x.jpg 740w"
+                  sizes="(min-width: 1200px) 370px, (min-width: 481px) 354px, 450px"
+                  src="./img/projects/business-mobile.jpg"
+                  alt="Бізнес"
+                />
                 <p class="project-card__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
