@@ -164,6 +164,10 @@ svg {
   display: block;
 }
 
+.rick-roll {
+  overflow: hidden;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -494,6 +498,12 @@ svg {
     width: 528px;
   }
 }
+@media screen and (max-height: 767px) and (orientation: landscape) {
+  .modal {
+    height: 90vh;
+    overflow-y: auto;
+  }
+}
 
 .modal__close-button {
   position: absolute;
@@ -750,6 +760,11 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media screen and (max-height: 767px) and (orientation: landscape) {
+  .nav-mobile {
+    overflow-y: auto;
+  }
 }
 
 .nav-mobile__close-button {

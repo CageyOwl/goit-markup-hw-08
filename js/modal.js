@@ -3,6 +3,7 @@
       openModalBtn: document.querySelector("[data-modal-open]"),
       closeModalBtn: document.querySelector("[data-modal-close]"),
       modal: document.querySelector("[data-modal]"),
+      page: document.querySelector(".rick-roll"),
     };
   
     refs.openModalBtn.addEventListener("click", toggleModal);
@@ -10,5 +11,7 @@
   
     function toggleModal() {
       refs.modal.classList.toggle("backdrop--is-hidden");
+      refs.page.classList.toggle(".rick-roll");
+      refs.page.classList.toggle(".no-scroll");
     }
 })();

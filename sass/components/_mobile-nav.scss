@@ -13,6 +13,10 @@
         display: flex;
         flex-direction: column;
     }
+
+    @media screen and (max-height: calc($tablet-w - 1px)) and (orientation: landscape) {
+        overflow-y: auto;
+    }
 }
 
 .nav-mobile__close-button {
