@@ -32,23 +32,24 @@
 }
 
 .project-card__img {
-    margin: 0 auto;
     width: 100%;
+    margin: 0 auto;
 }
 
 .project-card__overlay {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 63px 24px;
-  
-    font-size: 18px;
-    line-height: 1.56;
-    
     position: absolute;
     overflow: hidden;
     top: 0;
-  
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    padding-left: 24px;
+    padding-right: 24px;
+    // padding-top: 77px;
+    // padding-bottom: 77px;
+
     color: $main-bg-color;
     background-color: $projects-drop-bg;
   
@@ -58,6 +59,30 @@
     .project-card__link:hover &,
     .project-card__link:focus & {
         transform: translateY(0);
+    }
+
+    @media screen and (max-width: calc($tablet-w - 1px)) {
+        align-items: center;
+    }
+    @media screen and (min-width: $tablet-w) {
+        padding-top: 49px;
+        padding-bottom: 77px; 
+    }
+    @media screen and (min-width: $desktop-w) {
+        padding-top: 63px;
+        padding-bottom: 63px;
+    }
+}
+
+.project-card__overlay-text {
+    display: block;
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.56;
+
+    @media screen and (max-width: 360px) {
+        font-size: 16px;
     }
 }
 
